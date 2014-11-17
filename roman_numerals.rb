@@ -36,15 +36,4 @@ def self.to_I(arabic)
  puts output.join("")
  end
 
-#Lacking the measure against improper roman numeral.
-input = gets.chomp.upcase
-if input[/[^\dCDILMVX]/] != nil
-  puts "Not a roman numeral."
-  elsif input.to_i > 0
-  to_I(input.to_i)
-  elsif input == "0"
-  puts "There is no roman numeral for 0."
-  elsif input.is_a?(String)
-    to_1(input)
-  end
 end
